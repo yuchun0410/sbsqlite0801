@@ -12,7 +12,7 @@ RUN mvn clean package -DskipTests
 # =============================================
 # Stage 2：只帶 JAR 到精簡的 JRE 執行環境
 # =============================================
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /employees
 
